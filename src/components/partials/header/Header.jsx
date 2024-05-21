@@ -10,7 +10,7 @@ const Header = () => {
   const {store}  = React.useContext(StoreContext)
   const [showDropDown, setShowDropDown] = React.useState(false)
 
-  const name = store.credentials?.data.user_name // to appear the name in the dashboard when login
+  const name = store.credentials?.data.user_name 
   const email = store.credentials?.data.user_email
 
   const handleDropDown  = () => setShowDropDown(!showDropDown) // to show the dropdown
